@@ -6,51 +6,60 @@
 <meta name="description" content="Câu chuyện về Bánh Xèo 46A, Đinh Công Tráng, Tân Định — quán bánh xèo Michelin Bib Gourmand.">
 <meta property="og:image" content="img/hero-1600.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lora:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@400;500;700&family=Lora:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#140e0a;--paper:#f6ecd9;--tu:#f0a81c;--chili:#c2341b;--herb:#3c7a4a}
+:root{--ink:#1A1410;--cream:#FFF4DC;--tu:#FFC21A;--lime:#B6E34A;--pink:#FF5C8A;--herb:#0B6B43;--coral:#FF7A59;--chili:#D81B5E}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--ink);color:var(--paper);font-family:'Be Vietnam Pro',sans-serif;-webkit-font-smoothing:antialiased}
-body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body{background:var(--cream);color:var(--ink);font-family:'Be Vietnam Pro',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 a{color:inherit}
-.top{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:18px 22px;mix-blend-mode:normal}
-.logo{font-family:'Lora';font-weight:700;font-size:19px;text-decoration:none;text-shadow:0 1px 10px rgba(0,0,0,.6)}.logo b{color:var(--tu)}
-.lang button{border:1px solid rgba(255,255,255,.55);background:rgba(0,0,0,.25);color:#fff;padding:4px 10px;border-radius:99px;font:inherit;font-size:12px;cursor:pointer}.lang button.on{background:var(--tu);border-color:var(--tu);color:var(--ink)}
-.bar{position:fixed;top:0;left:0;height:3px;background:var(--tu);z-index:40;width:0}
-.dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:12px}
-.dots a{display:flex;align-items:center;justify-content:flex-end;gap:8px;text-decoration:none;font-size:11px;letter-spacing:.15em}
-.dots a span{opacity:0;transition:.3s;font-family:'Lora';font-style:italic;letter-spacing:0;font-size:13px}
-.dots a i{width:8px;height:8px;border-radius:50%;border:1px solid var(--paper);transition:.3s}
-.dots a.on i{background:var(--tu);border-color:var(--tu);transform:scale(1.4)}.dots a.on span,.dots a:hover span{opacity:1}
-@media(max-width:700px){.dots{right:8px}.dots a span{display:none}}
-/* chapters */
-.ch{position:relative;height:200vh}
-.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
-.stage img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;will-change:transform;transform:translate3d(0,var(--py,0),0) scale(var(--sc,1.08));transition:filter .6s}
-.stage:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,10,.55) 0%,rgba(20,14,10,.05) 35%,rgba(20,14,10,.35) 60%,rgba(20,14,10,.92) 100%)}
-.nar{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 8vw 11vh;max-width:900px;opacity:var(--op,0);transform:translateY(var(--ty,40px))}
-.num{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--tu);font-weight:700}
-.nar h2{font-family:'Lora';font-weight:700;font-size:clamp(40px,7vw,92px);line-height:1;letter-spacing:-.02em;margin:12px 0 20px;text-shadow:0 4px 30px rgba(0,0,0,.5)}
-.nar p{font-family:'Lora';font-style:italic;font-size:clamp(18px,2.2vw,25px);line-height:1.55;max-width:36em;text-shadow:0 2px 16px rgba(0,0,0,.7)}
-.nar small{display:block;margin-top:14px;font-size:12px;opacity:.6;font-style:normal;font-family:'Be Vietnam Pro'}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.top{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:18px;text-decoration:none;background:var(--ink);color:var(--cream);padding:6px 14px;border-radius:99px;transform:rotate(-2deg);display:inline-block}.logo b{color:var(--tu)}
+.lang{background:var(--ink);padding:3px;border-radius:99px}.lang button{border:0;background:none;color:var(--cream);padding:4px 10px;border-radius:99px;font:inherit;font-size:12px;font-weight:700;cursor:pointer}.lang button.on{background:var(--tu);color:var(--ink)}
+.bar{position:fixed;top:0;left:0;height:5px;background:linear-gradient(90deg,var(--pink),var(--tu),var(--lime));z-index:40;width:0}
+.dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:10px}
+.dots a{display:flex;align-items:center;justify-content:flex-end;gap:8px;text-decoration:none}
+.dots a span{opacity:0;transition:.25s;font-family:'Bricolage Grotesque';font-weight:700;font-size:12px;background:var(--ink);color:var(--cream);padding:3px 10px;border-radius:99px}
+.dots a i{width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--ink);transition:.25s}
+.dots a.on i{background:var(--pink);transform:scale(1.35)}.dots a.on span,.dots a:hover span{opacity:1}
+@media(max-width:760px){.dots{right:6px}.dots a span{display:none}}
+.sticker{display:inline-flex;align-items:center;gap:6px;font-family:'Bricolage Grotesque';font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.04em;padding:8px 16px;border:2.5px solid var(--ink);border-radius:99px;background:var(--cream);box-shadow:4px 4px 0 var(--ink);transform:rotate(-4deg)}
 /* prologue */
-.pro{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 24px;background:radial-gradient(ellipse at 50% 60%,#3a1e0e 0%,var(--ink) 70%)}
-.pro .k{font-size:12px;letter-spacing:.45em;text-transform:uppercase;color:var(--tu)}
-.pro h1{font-family:'Lora';font-size:clamp(52px,11vw,150px);line-height:.95;margin:22px 0;letter-spacing:-.03em}.pro h1 em{color:var(--tu)}
-.pro p{font-family:'Lora';font-style:italic;font-size:clamp(18px,2.4vw,24px);max-width:30em;opacity:.85}
-.pro .down{margin-top:48px;font-size:12px;letter-spacing:.35em;opacity:.6;animation:b 2s infinite}@keyframes b{50%{transform:translateY(8px)}}
-.fade{animation:f 1.6s ease both}.fade2{animation:f 1.6s .5s ease both}.fade3{animation:f 1.6s 1s ease both}@keyframes f{from{opacity:0;transform:translateY(20px)}}
+.pro{min-height:100svh;display:grid;place-items:center;text-align:center;padding:90px 22px 60px;background:var(--tu);position:relative;overflow:hidden}
+.pro h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(60px,13vw,190px);line-height:.86;letter-spacing:-.04em;margin:26px 0 22px}
+.pro h1 em{font-style:normal;color:var(--cream);-webkit-text-stroke:3px var(--ink);paint-order:stroke fill;text-shadow:6px 6px 0 var(--pink)}
+.pro p{font-family:'Lora';font-style:italic;font-size:clamp(18px,2.3vw,24px);max-width:30em;margin:0 auto}
+.pro .k{background:var(--pink)}
+.pro .down{margin-top:40px;font-weight:800;font-size:28px;animation:b 1.6s infinite}@keyframes b{50%{transform:translateY(8px)}}
+.doodle{position:absolute;pointer-events:none}
+.fade{animation:f 1.2s ease both}.fade2{animation:f 1.2s .3s ease both}.fade3{animation:f 1.2s .6s ease both}@keyframes f{from{opacity:0;transform:translateY(24px)}}
+/* chapters */
+.ch{position:relative;height:190vh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;align-items:center;background:var(--bg);color:var(--fg)}
+.inner{width:100%;max-width:1240px;margin:0 auto;padding:70px 6vw 40px;display:grid;gap:5vw;grid-template-columns:1.1fr 1fr;align-items:center}
+.ch:nth-of-type(odd) .frame{order:2}
+.frame{position:relative;aspect-ratio:4/5;max-height:76vh;border:4px solid var(--ink);border-radius:28px;overflow:hidden;box-shadow:12px 12px 0 var(--ink);transform:rotate(var(--rot,-2deg)) translate3d(0,var(--py,0),0);background:var(--ink)}
+.frame img{width:100%;height:100%;object-fit:cover;transform:scale(var(--sc,1.1));will-change:transform}
+.frame .sticker{position:absolute;top:16px;left:16px;transform:rotate(-6deg)}
+.nar{opacity:var(--op,0);transform:translateY(var(--ty,40px))}
+.num{font-family:'Bricolage Grotesque';font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase;display:inline-block;background:var(--ink);color:var(--bg);padding:5px 14px;border-radius:99px}
+.nar h2{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(40px,6.4vw,92px);line-height:.92;letter-spacing:-.035em;margin:18px 0 20px}
+.nar p{font-family:'Lora';font-style:italic;font-size:clamp(17px,1.9vw,23px);line-height:1.55;max-width:32em}
+.nar small{display:block;margin-top:14px;font-size:12px;font-weight:500}
+.big-n{position:absolute;right:3vw;bottom:-4vw;font-family:'Bricolage Grotesque';font-weight:800;font-size:38vw;line-height:1;color:var(--fg);opacity:.08;pointer-events:none}
+@media(max-width:760px){.inner{grid-template-columns:1fr;gap:18px;padding:70px 22px 26px}.ch:nth-of-type(odd) .frame{order:0}.frame{aspect-ratio:4/3.4;max-height:42vh;box-shadow:7px 7px 0 var(--ink);border-radius:20px}.nar h2{margin:12px 0 10px}}
 /* epilogue */
-.epi{padding:22vh 24px 14vh;text-align:center;background:linear-gradient(var(--ink),#2a160b)}
+.epi{padding:20vh 24px 16vh;text-align:center;background:var(--pink);position:relative;overflow:hidden}
 .epi p{font-family:'Lora';font-style:italic;font-size:clamp(22px,3.4vw,40px);line-height:1.4;max-width:24em;margin:0 auto}
-.epi .sig{margin-top:30px;font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--tu)}
-.info{background:var(--paper);color:var(--ink);padding:70px 0}
+.epi .sig{margin-top:30px}
+.info{background:var(--cream);padding:70px 0}
 .info .w{max-width:1100px;margin:0 auto;padding:0 22px;display:grid;gap:30px}@media(min-width:860px){.info .w{grid-template-columns:1fr 1.3fr}}
-.info h3{font-family:'Lora';font-size:28px;margin-bottom:16px}
-.info dl{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;font-size:15px}.info dt{color:#8a735a}.info dd a{color:var(--chili)}
-.info iframe{border:0;width:100%;min-height:300px;height:100%;border-radius:6px;filter:sepia(.2)}
-footer{background:var(--ink);color:#a8957a;font-size:12px;text-align:center;padding:30px 22px;line-height:1.7}footer b{color:var(--tu)}
-@media(prefers-reduced-motion:reduce){.stage img{transform:none!important}.nar{opacity:1!important;transform:none!important}.fade,.fade2,.fade3,.pro .down{animation:none}}
+.info h3{font-family:'Bricolage Grotesque';font-weight:800;font-size:34px;margin-bottom:18px}
+.info dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;font-size:15px}.info dt{font-weight:700;color:var(--herb)}.info dd a{color:var(--chili);font-weight:700}
+.info iframe{border:3px solid var(--ink);width:100%;min-height:300px;height:100%;border-radius:20px;box-shadow:8px 8px 0 var(--ink)}
+footer{background:var(--ink);color:var(--cream);font-size:12px;text-align:center;padding:30px 22px;line-height:1.7}footer b{color:var(--tu)}
+@media(prefers-reduced-motion:reduce){.frame,.frame img{transform:none!important}.nar{opacity:1!important;transform:none!important}.fade,.fade2,.fade3,.pro .down{animation:none}}
 </style>
 </head>
 <body>
@@ -59,31 +68,25 @@ footer{background:var(--ink);color:#a8957a;font-size:12px;text-align:center;padd
 <nav class="dots" id="dots"></nav>
 
 <section class="pro">
-<div class="k fade" data-i="pk">Một câu chuyện Sài Gòn</div>
+<div class="sticker k fade" data-i="pk">Một câu chuyện Sài Gòn</div>
 <h1 class="fade2" data-i="ph">Tiếng xèo<br>ở <em>Tân Định</em></h1>
 <p class="fade3" data-i="pp">Ngồi xuống đây, tôi kể bạn nghe về một chảo lửa bên đường Đinh Công Tráng — nơi người ta đã quay lại suốt hơn bảy thập kỷ.</p>
-<div class="down">↓</div>
+<div class="down">↓</div><svg class="doodle" style="left:6%;top:18%;width:120px" viewBox="0 0 120 120" fill="none" stroke="#1A1410" stroke-width="4" stroke-linecap="round"><path d="M20 70c10-30 30-40 40-20s30 10 40-20"/><path d="M30 95c8-6 16-6 24 0s16 6 24 0"/></svg><svg class="doodle" style="right:7%;bottom:16%;width:110px" viewBox="0 0 100 100" fill="none" stroke="#1A1410" stroke-width="4" stroke-linecap="round"><path d="M50 10v20M50 70v20M10 50h20M70 50h20M22 22l14 14M64 64l14 14M78 22L64 36M36 64L22 78"/></svg>
 </section>
 
-<section class="ch" data-t="Con hẻm"><div class="stage"><img src="img/front-800.webp" srcset="img/front-800.webp 800w,img/front-1600.webp 1600w" sizes="100vw" alt="Mặt tiền Bánh Xèo 46A">
-<div class="nar"><div class="num" data-i="c1n">Chương 1</div><h2 data-i="c1h">Con đường Đinh Công Tráng</h2><p data-i="c1p">Rẽ vào Đinh Công Tráng, gần nhà thờ Tân Định, bạn sẽ thấy tấm bảng hiệu xanh lá giản dị. Không cần tìm lâu — cứ đi theo mùi khói và tiếng chảo. Theo nhiều nguồn, quán đã có mặt ở đây từ khoảng năm 1945, truyền qua ba thế hệ.</p></div></div></section>
+<section class="ch" data-t="Con hẻm"><div class="stage" style="--bg:var(--lime);--fg:var(--ink)"><div class="big-n">01</div><div class="inner"><div class="frame" style="--rot:-3deg"><img src="img/front-800.webp" srcset="img/front-800.webp 800w,img/front-1600.webp 1600w" sizes="100vw" alt="Mặt tiền Bánh Xèo 46A"><span class="sticker">📍 Tân Định</span></div><div class="nar"><div class="num" data-i="c1n">Chương 1</div><h2 data-i="c1h">Con đường Đinh Công Tráng</h2><p data-i="c1p">Rẽ vào Đinh Công Tráng, gần nhà thờ Tân Định, bạn sẽ thấy tấm bảng hiệu xanh lá giản dị. Không cần tìm lâu — cứ đi theo mùi khói và tiếng chảo. Theo nhiều nguồn, quán đã có mặt ở đây từ khoảng năm 1945, truyền qua ba thế hệ.</p></div></div></div></section>
 
-<section class="ch" data-t="Lửa"><div class="stage"><img loading="lazy" src="img/fire3-800.webp" srcset="img/fire3-800.webp 800w,img/fire3-1600.webp 1600w" sizes="100vw" alt="Bếp lửa">
-<div class="nar"><div class="num" data-i="c2n">Chương 2</div><h2 data-i="c2h">Lửa và chảo</h2><p data-i="c2p">Bếp mở ngay trước mặt khách. Hàng chảo nóng xếp liền nhau, rổ giá trắng, thau nhân chờ sẵn. Mỗi chiếc bánh chỉ được đổ khi có người gọi — không bao giờ làm sẵn.</p></div></div></section>
+<section class="ch" data-t="Lửa"><div class="stage" style="--bg:var(--herb);--fg:var(--cream)"><div class="big-n">02</div><div class="inner"><div class="frame" style="--rot:2deg"><img loading="lazy" src="img/fire3-800.webp" srcset="img/fire3-800.webp 800w,img/fire3-1600.webp 1600w" sizes="100vw" alt="Bếp lửa"><span class="sticker">🔥 Bếp mở</span></div><div class="nar"><div class="num" data-i="c2n">Chương 2</div><h2 data-i="c2h">Lửa và chảo</h2><p data-i="c2p">Bếp mở ngay trước mặt khách. Hàng chảo nóng xếp liền nhau, rổ giá trắng, thau nhân chờ sẵn. Mỗi chiếc bánh chỉ được đổ khi có người gọi — không bao giờ làm sẵn.</p></div></div></div></section>
 
-<section class="ch" data-t="Tiếng xèo"><div class="stage"><img loading="lazy" src="img/hero-800.webp" srcset="img/hero-800.webp 800w,img/hero-1600.webp 1600w" sizes="100vw" alt="Bánh xèo">
-<div class="nar"><div class="num" data-i="c3n">Chương 3</div><h2 data-i="c3h">Tiếng xèo</h2><p data-i="c3p">Bột chạm chảo dầu nóng — "xèo". Cái tên của món ăn nằm ngay trong âm thanh ấy. Vài phút sau, chiếc bánh khổng lồ vàng ươm được gập đôi, ôm lấy đậu xanh, giá, thịt heo và tôm.</p></div></div></section>
+<section class="ch" data-t="Tiếng xèo"><div class="stage" style="--bg:var(--tu);--fg:var(--ink)"><div class="big-n">03</div><div class="inner"><div class="frame" style="--rot:-2deg"><img loading="lazy" src="img/hero-800.webp" srcset="img/hero-800.webp 800w,img/hero-1600.webp 1600w" sizes="100vw" alt="Bánh xèo"><span class="sticker">Xèo!</span></div><div class="nar"><div class="num" data-i="c3n">Chương 3</div><h2 data-i="c3h">Tiếng xèo</h2><p data-i="c3p">Bột chạm chảo dầu nóng — "xèo". Cái tên của món ăn nằm ngay trong âm thanh ấy. Vài phút sau, chiếc bánh khổng lồ vàng ươm được gập đôi, ôm lấy đậu xanh, giá, thịt heo và tôm.</p></div></div></div></section>
 
-<section class="ch" data-t="Rổ rau"><div class="stage"><img loading="lazy" src="img/greens-800.webp" srcset="img/greens-800.webp 800w,img/greens-1600.webp 1600w" sizes="100vw" alt="Rau sống">
-<div class="nar"><div class="num" data-i="c4n">Chương 4</div><h2 data-i="c4h">Rổ rau</h2><p data-i="c4p">Bánh xèo miền Nam không bao giờ đi một mình. Đi cùng là rổ cải xanh, rau thơm tươi rói và chén nước mắm chua ngọt — phần xanh mát cân lại cái giòn béo của vỏ bánh.</p></div></div></section>
+<section class="ch" data-t="Rổ rau"><div class="stage" style="--bg:var(--pink);--fg:var(--ink)"><div class="big-n">04</div><div class="inner"><div class="frame" style="--rot:3deg"><img loading="lazy" src="img/greens-800.webp" srcset="img/greens-800.webp 800w,img/greens-1600.webp 1600w" sizes="100vw" alt="Rau sống"><span class="sticker">🌿 Rau tươi</span></div><div class="nar"><div class="num" data-i="c4n">Chương 4</div><h2 data-i="c4h">Rổ rau</h2><p data-i="c4p">Bánh xèo miền Nam không bao giờ đi một mình. Đi cùng là rổ cải xanh, rau thơm tươi rói và chén nước mắm chua ngọt — phần xanh mát cân lại cái giòn béo của vỏ bánh.</p></div></div></div></section>
 
-<section class="ch" data-t="Cách ăn"><div class="stage"><img loading="lazy" src="img/plate2-800.webp" srcset="img/plate2-800.webp 800w,img/plate2-1600.webp 1600w" sizes="100vw" alt="Cách ăn bánh xèo">
-<div class="nar"><div class="num" data-i="c5n">Chương 5</div><h2 data-i="c5h">Cách ăn</h2><p data-i="c5p">Bẻ một miếng bánh. Đặt lên lá cải, thêm vài cọng rau thơm. Cuộn lại, chấm thật đẫm vào nước mắm. Người đứng bếp vẫn kiên nhẫn chỉ cho khách lần đầu — nhưng họ cũng nói: chẳng có luật nào cả, miễn bạn thấy thoải mái và ngon miệng.</p><small data-i="c5s">Theo chia sẻ với Michelin Guide, qua VnExpress International.</small></div></div></section>
+<section class="ch" data-t="Cách ăn"><div class="stage" style="--bg:var(--coral);--fg:var(--ink)"><div class="big-n">05</div><div class="inner"><div class="frame" style="--rot:-2deg"><img loading="lazy" src="img/plate2-800.webp" srcset="img/plate2-800.webp 800w,img/plate2-1600.webp 1600w" sizes="100vw" alt="Cách ăn bánh xèo"><span class="sticker">Cuốn · Chấm</span></div><div class="nar"><div class="num" data-i="c5n">Chương 5</div><h2 data-i="c5h">Cách ăn</h2><p data-i="c5p">Bẻ một miếng bánh. Đặt lên lá cải, thêm vài cọng rau thơm. Cuộn lại, chấm thật đẫm vào nước mắm. Người đứng bếp vẫn kiên nhẫn chỉ cho khách lần đầu — nhưng họ cũng nói: chẳng có luật nào cả, miễn bạn thấy thoải mái và ngon miệng.</p><small data-i="c5s">Theo chia sẻ với Michelin Guide, qua VnExpress International.</small></div></div></div></section>
 
-<section class="ch" data-t="Phương xa"><div class="stage"><img loading="lazy" src="img/michelin-800.webp" srcset="img/michelin-800.webp 800w,img/michelin-1600.webp 1600w" sizes="100vw" alt="Bảng Michelin">
-<div class="nar"><div class="num" data-i="c6n">Chương 6</div><h2 data-i="c6h">Khách phương xa</h2><p data-i="c6p">Năm 2008, Anthony Bourdain ghé quán khi quay "No Reservations" và hết lời khen chiếc bánh xèo. Rồi Michelin Guide xếp quán vào hạng mục Bib Gourmand: "Hơn bảy thập kỷ, khách quen vẫn quay lại vì chiếc bánh xèo khổng lồ…"</p><small data-i="c6s">Nguồn: VnExpress; Michelin Guide Vietnam.</small></div></div></section>
+<section class="ch" data-t="Phương xa"><div class="stage" style="--bg:var(--ink);--fg:var(--cream)"><div class="big-n">06</div><div class="inner"><div class="frame" style="--rot:2deg"><img loading="lazy" src="img/michelin-800.webp" srcset="img/michelin-800.webp 800w,img/michelin-1600.webp 1600w" sizes="100vw" alt="Bảng Michelin"><span class="sticker">★ Michelin Bib</span></div><div class="nar"><div class="num" data-i="c6n">Chương 6</div><h2 data-i="c6h">Khách phương xa</h2><p data-i="c6p">Năm 2008, Anthony Bourdain ghé quán khi quay "No Reservations" và hết lời khen chiếc bánh xèo. Rồi Michelin Guide xếp quán vào hạng mục Bib Gourmand: "Hơn bảy thập kỷ, khách quen vẫn quay lại vì chiếc bánh xèo khổng lồ…"</p><small data-i="c6s">Nguồn: VnExpress; Michelin Guide Vietnam.</small></div></div></div></section>
 
-<section class="epi"><p data-i="ep">Rồi bạn sẽ đứng dậy, tay còn thơm mùi lá cải, tai còn vang tiếng xèo. Và như bao người trước, bạn sẽ quay lại.</p><div class="sig" data-i="es">— Hết —</div></section>
+<section class="epi"><p data-i="ep">Rồi bạn sẽ đứng dậy, tay còn thơm mùi lá cải, tai còn vang tiếng xèo. Và như bao người trước, bạn sẽ quay lại.</p><div class="sticker sig" data-i="es">— Hết —</div></section>
 
 <section class="info"><div class="w">
 <div><h3 data-i="ih">Bánh Xèo 46A</h3><dl>
@@ -106,7 +109,7 @@ const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 let tick=false;function upd(){tick=false;const H=innerHeight,y=scrollY;bar.style.width=(y/(document.body.scrollHeight-H)*100)+'%';
 chs.forEach((c,i)=>{const r=c.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(r.height-H))),img=c.querySelector('img'),n=c.querySelector('.nar');
 const on=r.top<H*.5&&r.bottom>H*.5;dots.children[i].classList.toggle('on',on);if(RM)return;
-img.style.setProperty('--py',(-p*6)+'%');img.style.setProperty('--sc',1.12-p*.08);
+const fr=c.querySelector('.frame');fr.style.setProperty('--py',(20-p*40)+'px');img.style.setProperty('--sc',1.12-p*.08);
 const o=p<.12?p/.12:p>.85?(1-p)/.15:1;n.style.setProperty('--op',Math.max(0,o).toFixed(3));n.style.setProperty('--ty',((1-Math.min(1,p/.15))*40)+'px')})}
 addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});addEventListener('resize',upd);upd();
 </script>
