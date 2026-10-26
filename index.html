@@ -1,131 +1,164 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bánh Xèo 46A — Đinh Công Tráng, Tân Định · Michelin Bib Gourmand</title>
-<meta name="description" content="Bánh Xèo 46A – quán bánh xèo lâu đời ở Tân Định, Sài Gòn, được Michelin Guide xếp hạng Bib Gourmand. Giờ mở cửa, địa chỉ, gọi đặt bàn.">
-<meta property="og:title" content="Bánh Xèo 46A — Sài Gòn từ 1945">
+<meta name="description" content="Bánh Xèo 46A – quán bánh xèo lâu đời ở Tân Định, Sài Gòn, Michelin Bib Gourmand. Giờ mở cửa, địa chỉ, gọi đặt bàn.">
+<meta property="og:image" content="img/hero-1600.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lora:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Lora:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" imagesizes="100vw">
 <style>
-:root{--ink:#2a1a10;--paper:#fbf3e4;--turmeric:#e8a317;--chili:#b8361e;--leaf:#2f5d3a;--muted:#7a6550}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Be Vietnam Pro',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3,.serif{font-family:'Lora',serif}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:9;background:rgba(251,243,228,.92);backdrop-filter:blur(8px);border-bottom:1px solid #ead9bb}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font-family:'Lora';font-weight:700;font-size:20px;text-decoration:none}.logo span{color:var(--chili)}
-.lang{display:flex;gap:4px}.lang button{border:1px solid var(--ink);background:none;padding:4px 10px;border-radius:99px;font:inherit;font-size:13px;cursor:pointer}
-.lang button.on{background:var(--ink);color:var(--paper)}
-.hero{position:relative;overflow:hidden;padding:56px 0 72px}
-.hero .wrap{display:grid;gap:36px;align-items:center}
-@media(min-width:860px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
-.badge{display:inline-flex;gap:8px;align-items:center;background:var(--chili);color:#fff;font-size:13px;padding:6px 14px;border-radius:99px;letter-spacing:.04em}
-.hero h1{font-size:clamp(44px,9vw,92px);line-height:.98;margin:18px 0 14px;letter-spacing:-.02em}
-.hero h1 em{color:var(--turmeric);font-style:italic}
-.hero p.lead{font-size:18px;color:var(--muted);max-width:30em}
-.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--ink)}
-.btn.p{background:var(--ink);color:var(--paper)}.btn.z{background:#0068ff;border-color:#0068ff;color:#fff}
-.pan{aspect-ratio:1;max-width:440px;margin:auto;width:100%}
-.since{font-family:'Lora';font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--leaf)}
-section{padding:72px 0;border-top:1px solid #ead9bb}
-.k{font-size:13px;letter-spacing:.25em;text-transform:uppercase;color:var(--chili);font-weight:700}
-h2{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:8px 0 22px}
-.story{display:grid;gap:32px}@media(min-width:860px){.story{grid-template-columns:1fr 1fr}}
-.timeline{list-style:none;border-left:3px solid var(--turmeric);padding-left:22px}
-.timeline li{margin-bottom:20px}.timeline b{font-family:'Lora';font-size:22px;color:var(--chili);display:block}
-.dishes{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.dish{background:#fff;border-radius:18px;padding:24px;border:1px solid #ead9bb;position:relative}
-.dish .ic{font-size:34px}.dish h3{font-size:22px;margin:8px 0 6px}.dish p{color:var(--muted);font-size:15px}
-.note{font-size:13px;color:var(--muted);margin-top:16px}
-.dark{background:var(--ink);color:var(--paper)}.dark .k{color:var(--turmeric)}
-.grid2{display:grid;gap:28px}@media(min-width:860px){.grid2{grid-template-columns:1fr 1fr}}
-.hours{width:100%;border-collapse:collapse}.hours td{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15)}.hours td:last-child{text-align:right;font-weight:700}
-.map{border:0;width:100%;height:340px;border-radius:18px;filter:sepia(.25)}
-.quote{background:#fff;border-left:5px solid var(--turmeric);padding:22px 24px;border-radius:0 16px 16px 0;margin-bottom:14px}
-.quote p{font-family:'Lora';font-style:italic;font-size:18px}.quote small{color:var(--muted)}
-.bigcta{text-align:center;background:var(--turmeric);border:none}
-.bigcta h2{margin-bottom:10px}.bigcta .cta{justify-content:center}
-footer{padding:28px 0 90px;font-size:13px;color:var(--muted);text-align:center}
-.float{position:fixed;bottom:14px;left:14px;right:14px;display:flex;gap:8px;z-index:10}
-.float a{flex:1;text-align:center;justify-content:center}
-@media(min-width:860px){.float{display:none}footer{padding-bottom:28px}}
-[data-en]{}
+:root{--ink:#1c140f;--paper:#f8efdf;--tu:#f0a81c;--chili:#c2341b;--herb:#2f6b3c;--muted:#7b6551}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3,.serif{font-family:'Lora',serif}a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;transition:.3s}
+nav.s{background:rgba(28,20,15,.88);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;color:#fff}
+.logo{font-family:'Lora';font-weight:700;font-size:21px;text-decoration:none}.logo b{color:var(--tu)}
+.nl{display:flex;gap:22px;align-items:center;font-size:14px}.nl a{text-decoration:none;opacity:.85}@media(max-width:760px){.nl a{display:none}}
+.lang button{border:1px solid rgba(255,255,255,.6);background:none;color:#fff;padding:4px 10px;border-radius:99px;font:inherit;font-size:12px;cursor:pointer}.lang button.on{background:var(--tu);border-color:var(--tu);color:var(--ink)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero picture{position:absolute;inset:0}.hero img{animation:kb 18s ease-out forwards}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 70% 30%,transparent 10%,rgba(28,20,15,.35) 55%),linear-gradient(180deg,rgba(28,20,15,.55) 0%,rgba(28,20,15,0) 30%,rgba(60,20,5,.55) 65%,rgba(20,12,8,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:9vh;width:100%}
+.seal{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.5);padding:7px 16px 7px 8px;border-radius:99px;font-size:13px;letter-spacing:.06em;backdrop-filter:blur(6px);background:rgba(194,52,27,.55)}
+.seal i{width:26px;height:26px;border-radius:50%;background:#fff;color:var(--chili);display:grid;place-items:center;font-style:normal;font-weight:800}
+.hero h1{font-size:clamp(54px,11vw,150px);line-height:.92;letter-spacing:-.03em;margin:20px 0 18px;text-shadow:0 4px 40px rgba(0,0,0,.4)}
+.hero h1 em{color:var(--tu)}
+.hero p{max-width:34em;font-size:clamp(16px,2vw,19px);opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:99px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid currentColor;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--tu);border-color:var(--tu);color:var(--ink)}.btn.r{background:var(--chili);border-color:var(--chili);color:#fff}.btn.z{background:#0068ff;border-color:#0068ff;color:#fff}
+.scroll{position:absolute;right:22px;bottom:30px;z-index:2;writing-mode:vertical-rl;font-size:11px;letter-spacing:.4em;opacity:.7}
+section{padding:110px 0}
+.k{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--chili);font-weight:800}
+h2{font-size:clamp(36px,6vw,68px);line-height:1.02;letter-spacing:-.02em;margin:12px 0 24px}
+h2 em{color:var(--chili)}
+.marquee{background:var(--chili);color:var(--paper);overflow:hidden;white-space:nowrap;padding:16px 0;font-family:'Lora';font-style:italic;font-size:22px}
+.marquee div{display:inline-block;animation:mq 30s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+.intro{display:grid;gap:40px;align-items:center}@media(min-width:900px){.intro{grid-template-columns:5fr 7fr}}
+.collage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:70px;gap:12px}
+.collage figure{border-radius:6px;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.c1{grid-column:1/5;grid-row:1/6}.c2{grid-column:5/7;grid-row:2/5}.c3{grid-column:3/7;grid-row:6/9}.c4{grid-column:1/3;grid-row:6/10}
+.big{font-family:'Lora';font-size:clamp(20px,2.4vw,26px);line-height:1.45}
+.stats{display:flex;gap:34px;margin-top:30px;flex-wrap:wrap}.stats b{font-family:'Lora';font-size:44px;color:var(--chili);display:block;line-height:1}.stats span{font-size:13px;color:var(--muted)}
+.heritage{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.heritage .wrap{display:grid;gap:50px;align-items:center}@media(min-width:900px){.heritage .wrap{grid-template-columns:1fr 1fr}}
+.heritage .k{color:var(--tu)}.heritage h2 em{color:var(--tu)}
+.yr{position:absolute;right:-30px;top:20px;font-family:'Lora';font-weight:700;font-size:min(32vw,380px);color:rgba(240,168,28,.07);line-height:1}
+.frames{position:relative;height:560px}
+.frames figure{position:absolute;overflow:hidden;border:8px solid var(--paper);box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.f1{width:62%;height:86%;left:0;top:0;transform:rotate(-2deg)}.f2{width:50%;height:56%;right:0;bottom:0;transform:rotate(3deg)}
+.tl{list-style:none;border-left:2px solid var(--tu);padding-left:24px;margin-top:26px}.tl li{margin-bottom:18px}.tl b{font-family:'Lora';font-size:22px;color:var(--tu);display:block}
+.dishes{display:grid;gap:22px}@media(min-width:800px){.dishes{grid-template-columns:1.3fr 1fr 1fr}}
+.dish{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 30px 50px -35px rgba(60,20,0,.6);transition:.3s}.dish:hover{transform:translateY(-6px)}
+.dish .ph{aspect-ratio:4/3;overflow:hidden}.dish:first-child .ph{aspect-ratio:4/3.3}.dish img{transition:.6s}.dish:hover img{transform:scale(1.06)}
+.dish .tx{padding:22px 24px 26px}.dish h3{font-size:24px;margin-bottom:6px}.dish p{color:var(--muted);font-size:15px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.15em;text-transform:uppercase;background:var(--tu);padding:3px 10px;border-radius:99px;margin-bottom:10px;font-weight:700}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+.mich{background:var(--tu);padding:80px 0;text-align:center}
+.mich blockquote{font-family:'Lora';font-style:italic;font-size:clamp(24px,3.6vw,42px);line-height:1.3;max-width:900px;margin:0 auto}
+.mich cite{display:block;margin-top:22px;font-style:normal;font-size:13px;letter-spacing:.25em;text-transform:uppercase;font-weight:800}
+.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 20px;scrollbar-width:thin}
+.gal figure{flex:0 0 auto;height:min(62vh,520px);scroll-snap-align:center;border-radius:6px;overflow:hidden;position:relative}
+.gal figure.w{width:min(78vw,760px)}.gal figure.t{width:min(62vw,360px)}
+.gal figcaption{position:absolute;left:12px;bottom:10px;color:#fff;font-size:12px;text-shadow:0 1px 6px #000}
+.visit{display:grid;gap:30px}@media(min-width:900px){.visit{grid-template-columns:1fr 1.2fr}}
+.hours{width:100%;border-collapse:collapse;font-size:17px}.hours td{padding:14px 0;border-bottom:1px dashed #d6c3a2}.hours td:last-child{text-align:right;font-weight:800}
+.map{border:0;width:100%;height:100%;min-height:380px;border-radius:8px}
+.quotes{display:grid;gap:18px;margin-top:10px}@media(min-width:800px){.quotes{grid-template-columns:1fr 1fr}}
+.q{border-top:3px solid var(--chili);padding-top:18px}.q p{font-family:'Lora';font-style:italic;font-size:20px}.q small{color:var(--muted)}
+.final{position:relative;color:#fff;text-align:center;padding:150px 0;overflow:hidden}
+.final picture{position:absolute;inset:0}.final:before{content:"";position:absolute;inset:0;z-index:1;background:rgba(40,12,4,.72)}
+.final .wrap{position:relative;z-index:2}.final .cta{justify-content:center}
+footer{background:var(--ink);color:#bba78c;padding:34px 0 100px;font-size:13px;text-align:center}footer b{color:var(--tu)}
+.float{position:fixed;bottom:12px;left:12px;right:12px;display:flex;gap:8px;z-index:30}.float a{flex:1;justify-content:center;padding:13px}
+@media(min-width:860px){.float{display:none}footer{padding-bottom:34px}}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero img,.marquee div{animation:none}}
+@media(max-width:700px){section{padding:76px 0}.frames{height:420px}.collage{grid-auto-rows:52px}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><a class="logo" href="#">Bánh Xèo <span>46A</span></a>
-<div class="lang"><button class="on" onclick="L('vi')">VI</button><button onclick="L('en')">EN</button></div></div></nav>
+<nav id="nav"><div class="wrap"><a class="logo" href="#">Bánh Xèo <b>46A</b></a>
+<div class="nl"><a href="#story" data-i="n1">Câu chuyện</a><a href="#menu" data-i="n2">Món ngon</a><a href="#visit" data-i="n3">Ghé quán</a><span class="lang"><button class="on" onclick="L('vi')">VI</button> <button onclick="L('en')">EN</button></span></div></div></nav>
 
-<header class="hero"><div class="wrap">
-<div>
-<span class="badge">★ <span data-i="badge">Michelin Guide · Bib Gourmand</span></span>
-<h1>Giòn rụm<br><em>từ 1945.</em></h1>
-<p class="lead" data-i="lead">Quán bánh xèo ba thế hệ trên đường Đinh Công Tráng, Tân Định — nơi người Sài Gòn và du khách cùng ngồi bên lò lửa, cuốn lá cải, chấm nước mắm chua ngọt.</p>
-<div class="cta"><a class="btn p" href="tel:+842838241110">📞 <span data-i="call">Gọi đặt bàn</span></a><a class="btn" href="#map">📍 <span data-i="dir">Chỉ đường</span></a><a class="btn" href="https://www.facebook.com/pages.banhxeo46A/" target="_blank" rel="noopener">Facebook</a></div>
-</div>
-<svg class="pan" viewBox="0 0 400 400" aria-hidden="true">
-<circle cx="200" cy="200" r="190" fill="#2a1a10"/><circle cx="200" cy="200" r="168" fill="#3b2617"/>
-<path d="M60 205 Q200 60 340 205 Q200 330 60 205Z" fill="#e8a317"/>
-<path d="M60 205 Q200 60 340 205" fill="none" stroke="#c9850a" stroke-width="6"/>
-<g fill="#f6c94a" opacity=".9"><circle cx="130" cy="180" r="9"/><circle cx="250" cy="150" r="7"/><circle cx="290" cy="200" r="10"/><circle cx="170" cy="240" r="6"/><circle cx="220" cy="220" r="8"/></g>
-<g fill="#ef8a7a"><path d="M150 200 q15 -18 30 0 q-15 10 -30 0z"/><path d="M225 175 q15 -18 30 0 q-15 10 -30 0z"/></g>
-<g stroke="#f4ead2" stroke-width="3" stroke-linecap="round"><path d="M120 215 l30 -6"/><path d="M200 255 l24 -10"/><path d="M265 225 l28 -2"/></g>
-<path d="M330 90 q40 -30 50 10 q-30 20 -50 -10z" fill="#2f5d3a"/><path d="M40 300 q-20 40 20 50 q20 -30 -20 -50z" fill="#2f5d3a"/>
-<text x="200" y="385" text-anchor="middle" font-family="Lora" font-size="16" fill="#e8a317" letter-spacing="6">SÀI GÒN · 1945</text>
-</svg>
-</div></header>
+<header class="hero">
+<picture><img src="img/hero-1600.webp" srcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="100vw" alt="Bánh xèo 46A vàng giòn" fetchpriority="high"></picture>
+<div class="wrap">
+<span class="seal"><i>★</i><span data-i="badge">Michelin Guide · Bib Gourmand 2024–2025</span></span>
+<h1 data-i="h">Tiếng xèo<br>của <em>Sài Gòn.</em></h1>
+<p data-i="lead">Chiếc bánh xèo khổng lồ vàng ươm, giòn rụm từ chảo lửa bên đường Đinh Công Tráng — nơi người Sài Gòn, du khách và cả Michelin Guide tìm về suốt hơn bảy thập kỷ.</p>
+<div class="cta"><a class="btn p" href="tel:+842838241110">📞 <span data-i="call">Gọi đặt bàn</span></a><a class="btn" href="#visit">📍 <span data-i="dir">Chỉ đường</span></a><a class="btn" href="https://www.facebook.com/pages.banhxeo46A/" target="_blank" rel="noopener">Facebook</a></div>
+</div><div class="scroll">SCROLL ↓</div></header>
 
-<section id="story"><div class="wrap story">
-<div><div class="k" data-i="k1">Câu chuyện</div><h2 data-i="h1">Một chảo lửa, ba thế hệ.</h2>
-<p data-i="s1">Quán bắt đầu từ năm 1945 với bà Lê Thị Giỏi và nay do bà Nguyễn Thị Lệ Thủy — thế hệ thứ ba — điều hành. Michelin Guide ghi nhận: suốt hơn bảy thập kỷ, khách quen vẫn quay lại vì chiếc bánh xèo khổng lồ nhân đậu xanh, giá, thịt heo và tôm.</p>
-<p class="note" data-i="src1">Nguồn: Michelin Guide Vietnam; VnGuide.</p></div>
-<ul class="timeline">
-<li><b>1945</b><span data-i="t1">Bà Lê Thị Giỏi đổ những chiếc bánh xèo đầu tiên.</span></li>
-<li><b>3 thế hệ</b><span data-i="t2">Công thức giữ nguyên, truyền từ bà sang cháu.</span></li>
-<li><b>Bib Gourmand</b><span data-i="t3">Michelin Guide vinh danh — "ngon, giá hợp lý".</span></li>
-</ul>
+<div class="marquee" aria-hidden="true"><div>Bánh xèo giòn rụm · Rau sống · Nước mắm chua ngọt · Lửa than hồng · Tân Định · Since 1945 · Michelin Bib Gourmand · &nbsp;Bánh xèo giòn rụm · Rau sống · Nước mắm chua ngọt · Lửa than hồng · Tân Định · Since 1945 · Michelin Bib Gourmand · &nbsp;</div></div>
+
+<section id="story"><div class="wrap intro">
+<div class="rv"><div class="k" data-i="k1">Ăn như người Sài Gòn</div>
+<h2 data-i="h1">Bẻ một miếng,<br><em>cuốn một lá.</em></h2>
+<p class="big" data-i="s1">Vỏ bánh mỏng giòn, nhân đậu xanh, giá, thịt heo và tôm — xé một miếng, cuốn cùng cải xanh và rau thơm, chấm nước mắm chua ngọt. Ngồi ngoài trời cạnh bếp mở để nghe trọn tiếng "xèo".</p>
+<div class="stats"><div><b>1945</b><span data-i="st1">năm khởi nghiệp</span></div><div><b>3</b><span data-i="st2">thế hệ gia đình</span></div><div><b>Bib</b><span data-i="st3">Michelin Gourmand</span></div></div></div>
+<div class="collage rv">
+<figure class="c1"><img loading="lazy" src="img/plate2-800.webp" srcset="img/plate2-800.webp 800w,img/plate2-1600.webp 1600w" sizes="(min-width:900px) 40vw, 70vw" alt="Bánh xèo"></figure>
+<figure class="c2"><img loading="lazy" src="img/greens-800.webp" alt="Rau sống"></figure>
+<figure class="c3"><img loading="lazy" src="img/fire3-800.webp" alt="Bếp lửa"></figure>
+<figure class="c4"><img loading="lazy" src="img/neon-800.webp" alt="Bảng hiệu"></figure>
+</div></div></section>
+
+<section class="heritage"><div class="yr">1945</div><div class="wrap">
+<div class="frames rv"><figure class="f1"><img loading="lazy" src="img/front-800.webp" alt="Mặt tiền quán"></figure><figure class="f2"><img loading="lazy" src="img/fire1-800.webp" alt="Bếp đổ bánh"></figure></div>
+<div class="rv"><div class="k" data-i="k2">Since 1945</div><h2 data-i="h2">Một chảo lửa,<br><em>ba thế hệ.</em></h2>
+<p data-i="s2">Quán bắt đầu từ năm 1945 với bà Lê Thị Giỏi và được truyền lại qua ba thế hệ. Mỗi chiếc bánh vẫn được đổ tươi khi khách gọi — không làm sẵn.</p>
+<ul class="tl"><li><b>1945</b><span data-i="t1">Bà Lê Thị Giỏi đổ những chiếc bánh đầu tiên.</span></li><li><b>2008</b><span data-i="t2">Anthony Bourdain ghé quán trong "No Reservations".</span></li><li><b>Michelin</b><span data-i="t3">Được Michelin Guide xếp hạng Bib Gourmand.</span></li></ul>
+<p class="note" style="color:#a8957a" data-i="src2">Nguồn: Michelin Guide, VnExpress, VnGuide.</p></div>
 </div></section>
 
 <section id="menu"><div class="wrap">
-<div class="k" data-i="k2">Món đặc trưng</div><h2 data-i="h2">Gọi gì ở 46A?</h2>
+<div class="rv"><div class="k" data-i="k3">Món đặc trưng</div><h2 data-i="h3">Gọi gì ở <em>46A?</em></h2></div>
 <div class="dishes">
-<div class="dish"><div class="ic">🥞</div><h3 data-i="d1">Bánh xèo cỡ lớn</h3><p data-i="d1p">Vỏ vàng giòn, nhân đậu xanh, giá, thịt heo và tôm. Ăn kèm rau sống, nước mắm.</p></div>
-<div class="dish"><div class="ic">🥗</div><h3 data-i="d2">Gỏi gà xé</h3><p data-i="d2p">Món ăn kèm được Michelin gợi ý gọi cùng bánh xèo.</p></div>
-<div class="dish"><div class="ic">🔥</div><h3 data-i="d3">Món nướng than</h3><p data-i="d3p">Thịt heo, bò, mực và tôm nướng trên than hồng.</p></div>
-</div>
-<p class="note" data-i="mnote">Thực đơn & giá: vui lòng xem tại quán hoặc gọi 028 3824 1110.</p>
+<article class="dish rv"><div class="ph"><img loading="lazy" src="img/hero-800.webp" alt=""></div><div class="tx"><span class="tag" data-i="tg">Phải thử</span><h3 data-i="d1">Bánh xèo cỡ lớn</h3><p data-i="d1p">Vỏ vàng giòn, nhân đậu xanh, giá, thịt heo, tôm. Đổ tươi theo từng đơn.</p></div></article>
+<article class="dish rv"><div class="ph"><img loading="lazy" src="img/rolls-800.webp" alt=""></div><div class="tx"><h3 data-i="d2">Gỏi cuốn & gỏi gà</h3><p data-i="d2p">Michelin gợi ý gọi gỏi gà xé ăn kèm bánh xèo.</p></div></article>
+<article class="dish rv"><div class="ph"><img loading="lazy" src="img/fire2-800.webp" alt=""></div><div class="tx"><h3 data-i="d3">Món nướng than</h3><p data-i="d3p">Thịt heo, bò, mực, tôm nướng trên than hồng.</p></div></article>
+</div><p class="note" data-i="mnote">Thực đơn & giá cập nhật tại quán — gọi 028 3824 1110.</p></div></section>
+
+<div class="mich"><div class="wrap rv"><blockquote>"For over seven decades, regulars have been returning for its huge Vietnamese signature crêpes stuffed with mung beans, bean sprouts, pork and shrimp."</blockquote><cite>— The MICHELIN Guide · Bib Gourmand</cite></div></div>
+
+<section style="padding-bottom:70px"><div class="wrap rv"><div class="k" data-i="k4">Thư viện ảnh</div><h2 data-i="h4">Một ngày ở <em>46A</em></h2></div>
+<div class="gal">
+<figure class="w"><img loading="lazy" src="img/plate3-1600.webp" alt=""></figure>
+<figure class="t"><img loading="lazy" src="img/vne-800.webp" alt=""><figcaption>Ảnh: camilomazo / VnExpress</figcaption></figure>
+<figure class="w"><img loading="lazy" src="img/room-1600.webp" alt=""></figure>
+<figure class="t"><img loading="lazy" src="img/michelin-800.webp" alt=""></figure>
+<figure class="t"><img loading="lazy" src="img/fire1-800.webp" alt=""></figure>
+<figure class="w"><img loading="lazy" src="img/greens-1600.webp" alt=""></figure>
+<figure class="t"><img loading="lazy" src="img/neon-800.webp" alt=""></figure>
 </div></section>
 
-<section class="dark" id="map"><div class="wrap grid2">
-<div><div class="k" data-i="k3">Giờ mở cửa & địa chỉ</div><h2 data-i="h3">Mở cửa mỗi ngày</h2>
-<table class="hours"><tr><td data-i="lunch">Trưa</td><td>10:00 – 13:50</td></tr><tr><td data-i="dinner">Tối</td><td>16:00 – 20:50</td></tr><tr><td data-i="days">Thứ Hai – Chủ Nhật</td><td>✓</td></tr></table>
-<p style="margin-top:20px">46A Đinh Công Tráng, P. Tân Định, TP. Hồ Chí Minh</p>
-<p class="note" style="color:#c9b89a" data-i="tip">Mẹo: nên đến sớm trước giờ đóng cửa; đi nhóm vào buổi tối/cuối tuần nên gọi trước.</p></div>
-<iframe class="map" loading="lazy" title="map" src="https://maps.google.com/maps?q=B%C3%A1nh%20X%C3%A8o%2046A%2C%2046A%20%C4%90inh%20C%C3%B4ng%20Tr%C3%A1ng%2C%20T%C3%A2n%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&z=16&output=embed"></iframe>
-</div></section>
+<section id="visit" style="padding-top:40px"><div class="wrap">
+<div class="visit"><div class="rv"><div class="k" data-i="k5">Ghé quán</div><h2 data-i="h5">Mở cửa<br><em>mỗi ngày.</em></h2>
+<table class="hours"><tr><td data-i="lunch">Trưa</td><td>10:00 – 13:50</td></tr><tr><td data-i="dinner">Tối</td><td>16:00 – 20:50</td></tr><tr><td data-i="addr">Địa chỉ</td><td>46A Đinh Công Tráng, Tân Định</td></tr><tr><td data-i="ph">Điện thoại</td><td><a href="tel:+842838241110">028 3824 1110</a></td></tr></table>
+<p class="note" data-i="tip">Mẹo: đến sớm trước giờ đóng cửa; đi nhóm buổi tối/cuối tuần nên gọi trước.</p>
+<div class="quotes"><div class="q"><p data-i="q1">"Nếu muốn ăn bánh xèo kiểu miền Nam ở trung tâm Sài Gòn, đây là địa chỉ nhiều người nhắc tới đầu tiên."</p><small>— VnGuide</small></div><div class="q"><p>Tripadvisor</p><small data-i="q2">500+ đánh giá của du khách</small></div></div></div>
+<iframe class="map rv" loading="lazy" title="map" src="https://maps.google.com/maps?q=B%C3%A1nh%20X%C3%A8o%2046A%2C%2046A%20%C4%90inh%20C%C3%B4ng%20Tr%C3%A1ng%2C%20T%C3%A2n%20%C4%90%E1%BB%8Bnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&z=16&output=embed"></iframe></div></div></section>
 
-<section id="reviews"><div class="wrap">
-<div class="k" data-i="k4">Được ghi nhận</div><h2 data-i="h4">Người sành ăn nói gì</h2>
-<div class="quote"><p>"For over seven decades, regulars have been returning for its huge Vietnamese signature crêpes…"</p><small>— Michelin Guide Vietnam, Bib Gourmand</small></div>
-<div class="quote"><p data-i="q2">"Nếu bạn muốn ăn bánh xèo kiểu miền Nam ở trung tâm Sài Gòn, đây là địa chỉ nhiều người nhắc tới đầu tiên."</p><small>— VnGuide</small></div>
-</div></section>
+<section class="final"><picture><img loading="lazy" src="img/fire3-1600.webp" alt=""></picture><div class="wrap rv">
+<h2 data-i="h6">Hôm nay <em style="color:var(--tu)">ăn bánh xèo</em> nhé?</h2><p data-i="p6">Gọi trước giữ bàn cho nhóm, hoặc nhắn quán qua Facebook.</p>
+<div class="cta"><a class="btn p" href="tel:+842838241110">📞 028 3824 1110</a><a class="btn" href="https://www.facebook.com/pages.banhxeo46A/" target="_blank" rel="noopener">💬 Messenger</a><a class="btn z" href="#" onclick="alert('Demo: nút Zalo sẽ gắn số Zalo chính thức của quán.');return false">Zalo</a></div></div></section>
 
-<section class="bigcta"><div class="wrap">
-<h2 data-i="h5">Hôm nay ăn bánh xèo nhé?</h2><p data-i="p5">Gọi trước để giữ bàn cho nhóm, hoặc nhắn quán qua Facebook.</p>
-<div class="cta"><a class="btn p" href="tel:+842838241110">📞 028 3824 1110</a><a class="btn" href="https://www.facebook.com/pages.banhxeo46A/" target="_blank" rel="noopener">💬 Messenger</a><a class="btn z" href="#" onclick="alert('Demo: nút Zalo sẽ gắn số Zalo chính thức của quán.');return false">Zalo</a></div>
-</div></section>
-
-<footer><div class="wrap">© Bánh Xèo 46A · 46A Đinh Công Tráng, Tân Định<br><b>Bản demo do <a href="https://gooduselabs.com">GoodUseLabs</a> thiết kế</b> — <span data-i="disc">không phải website chính thức; thông tin tổng hợp từ nguồn công khai.</span></div></footer>
-<div class="float"><a class="btn p" href="tel:+842838241110">📞 <span data-i="call2">Gọi</span></a><a class="btn" style="background:var(--paper)" href="#map">📍 <span data-i="dir2">Bản đồ</span></a></div>
-
+<footer><div class="wrap">© Bánh Xèo 46A · 46A Đinh Công Tráng, P. Tân Định, TP.HCM<br><b>Bản demo do <a href="https://gooduselabs.com">GoodUseLabs</a> thiết kế — không phải website chính thức</b><br><span data-i="cred">Ảnh: fanpage/nguồn của quán & khách ghé thăm (Tripadvisor, VnGuide, VnExpress) — chỉ dùng cho bản demo.</span></div></footer>
+<div class="float"><a class="btn p" href="tel:+842838241110">📞 <span data-i="call2">Gọi</span></a><a class="btn r" href="#visit">📍 <span data-i="dir2">Bản đồ</span></a></div>
 <script>
-const EN={badge:"Michelin Guide · Bib Gourmand",lead:"A three-generation bánh xèo house on Đinh Công Tráng, Tân Định — where Saigonese and travellers sit by the open fire, wrap crêpes in mustard greens and dip in sweet-sour fish sauce.",call:"Call to reserve",dir:"Directions",k1:"Our story",h1:"One fiery pan, three generations.",s1:"Started in 1945 by Mrs. Lê Thị Giỏi and now run by Mrs. Nguyễn Thị Lệ Thủy, the third generation. As the Michelin Guide notes, for over seven decades regulars have returned for the huge crêpes stuffed with mung beans, bean sprouts, pork and shrimp.",src1:"Sources: Michelin Guide Vietnam; VnGuide.",t1:"Mrs. Lê Thị Giỏi pours the first crêpes.",t2:"The recipe passed from grandmother to granddaughter.",t3:"Michelin Guide recognition — great food at a great value.",k2:"Signatures",h2:"What to order at 46A",d1:"The giant bánh xèo",d1p:"Crispy golden shell with mung beans, sprouts, pork and shrimp. Served with fresh herbs and fish sauce.",d2:"Pulled chicken salad",d2p:"Michelin's recommended pairing.",d3:"Charcoal grills",d3p:"Pork, beef, squid and prawns over glowing charcoal.",mnote:"Menu & prices: please check in store or call +84 28 3824 1110.",k3:"Hours & address",h3:"Open every day",lunch:"Lunch",dinner:"Dinner",days:"Monday – Sunday",tip:"Tip: arrive well before closing; groups should call ahead for evenings and weekends.",k4:"Recognition",h4:"What the critics say",q2:"\"If you want Southern-style bánh xèo in central Saigon, this is the address most people name first.\" (translated)",h5:"Bánh xèo tonight?",p5:"Call ahead to hold a table for your group, or message us on Facebook.",disc:"not the official website; information compiled from public sources.",call2:"Call",dir2:"Map"};
+const EN={n1:"Story",n2:"Food",n3:"Visit",badge:"Michelin Guide · Bib Gourmand 2024–2025",h:"The sizzle<br>of <em>Saigon.</em>",lead:"A giant, golden, shatter-crisp crêpe from the open fire on Đinh Công Tráng — where locals, travellers and the Michelin Guide have kept coming back for over seven decades.",call:"Call to reserve",dir:"Directions",k1:"Eat like a local",h1:"Break a piece,<br><em>wrap a leaf.</em>",s1:"A thin crisp shell filled with mung beans, bean sprouts, pork and shrimp — tear a piece, wrap it in mustard greens and herbs, dip in sweet-sour fish sauce. Sit outside by the open kitchen to hear the full “xèo”.",st1:"founded",st2:"family generations",st3:"Michelin Gourmand",k2:"Since 1945",h2:"One fiery pan,<br><em>three generations.</em>",s2:"Started in 1945 by Mrs. Lê Thị Giỏi and handed down through three generations. Every crêpe is still poured fresh to order — never in advance.",t1:"Mrs. Lê Thị Giỏi pours the first crêpes.",t2:"Anthony Bourdain visits for “No Reservations”.",t3:"Awarded Bib Gourmand by the MICHELIN Guide.",src2:"Sources: Michelin Guide, VnExpress, VnGuide.",k3:"Signatures",h3:"What to order at <em>46A</em>",tg:"Must try",d1:"The giant bánh xèo",d1p:"Golden crisp shell, mung beans, sprouts, pork, shrimp. Poured fresh for every order.",d2:"Rolls & chicken salad",d2p:"Michelin recommends the pulled chicken salad alongside.",d3:"Charcoal grills",d3p:"Pork, beef, squid and prawns over glowing coals.",mnote:"Menu & prices available in store — call +84 28 3824 1110.",k4:"Gallery",h4:"A day at <em>46A</em>",k5:"Visit",h5:"Open<br><em>every day.</em>",lunch:"Lunch",dinner:"Dinner",addr:"Address",ph:"Phone",tip:"Tip: arrive well before closing; groups should call ahead for evenings and weekends.",q1:"“If you want Southern-style bánh xèo in central Saigon, this is the address most people name first.” (translated)",q2:"500+ traveller reviews",h6:"<em style='color:var(--tu)'>Bánh xèo</em> tonight?",p6:"Call ahead to hold a table, or message us on Facebook.",cred:"Photos: the restaurant's page & visitors (Tripadvisor, VnGuide, VnExpress) — demo use only.",call2:"Call",dir2:"Map"};
 const VI={};document.querySelectorAll('[data-i]').forEach(e=>VI[e.dataset.i]=e.innerHTML);
-function L(l){const d=l=='en'?EN:VI;document.querySelectorAll('[data-i]').forEach(e=>{if(d[e.dataset.i])e.innerHTML=d[e.dataset.i]});document.documentElement.lang=l;document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.textContent.toLowerCase()==l));document.querySelector('.hero h1').innerHTML=l=='en'?'Crispy<br><em>since 1945.</em>':'Giòn rụm<br><em>từ 1945.</em>'}
+function L(l){const d=l=='en'?EN:VI;document.querySelectorAll('[data-i]').forEach(e=>{if(d[e.dataset.i])e.innerHTML=d[e.dataset.i]});document.documentElement.lang=l;document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.textContent.toLowerCase()==l))}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>60),{passive:true});
 </script>
 </body></html>
